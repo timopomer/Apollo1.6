@@ -19,10 +19,15 @@ int main()
 	}
 
 	std::unique_ptr<MemoryManager> manager = std::make_unique<MemoryManager>(dwProcId);
+	std::unique_ptr<Player> player = std::make_unique<Player>(std::move(manager));
+
 	for (;;)
 	{
-		float res = 0;
-		std::cout << manager->ReadMemory(HWDLL, 0x1AFFA8, &res);
+		std::cout << "x:      " << player->GetCoordinates().x << std::endl;
+		std::cout << "y:      " << player->GetCoordinates().y << std::endl;
+		std::cout << "z:      " << player->GetCoordinates().z << std::endl;
+		std::cout << "pitch:  " << player->GetView().pitch << std::endl;
+		std::cout << "yaw:    " << player->GetView().yaw << std::endl;
 		Sleep(100);
 
 		system("cls");
