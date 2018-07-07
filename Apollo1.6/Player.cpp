@@ -1,11 +1,9 @@
 #include "Player.h"
 
-
-
 Coordinates Player::GetCoordinates()
 {
 	Coordinates coords{};
-	this->m_manager->ReadMemory(HWDLL, PLAYER_OFFSET + PLAYER_COORDINATE_OFFSET, &coords);
+	this->m_manager->ReadMemory(HWDLL, PLAYER_BASE + PLAYER_COORDINATE_OFFSET, &coords);
 	return coords;
 }
 
@@ -16,12 +14,6 @@ View Player::GetView()
 	return view;
 }
 
-Player::Player(std::unique_ptr<MemoryManager> manager) :
-	m_manager(std::move(manager))
-{
-}
-
-
-Player::~Player()
-{
-}
+Player::Player(std::shared_ptr<MemoryManager> manager) :
+	m_manager(manager)
+{}

@@ -1,4 +1,5 @@
 #pragma once
+
 #include <windows.h>
 #include <map>
 #include <tlhelp32.h>
@@ -17,7 +18,6 @@ public:
 	MemoryManager() = delete;
 	MemoryManager(const DWORD dwProcId);
 	~MemoryManager();
-
 
 	template <typename T>
 	T ReadMemory(const LPCSTR &moduleName, const int offset, T *result)

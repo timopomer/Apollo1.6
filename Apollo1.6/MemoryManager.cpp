@@ -1,7 +1,5 @@
 #include "MemoryManager.h"
 
-
-
 MemoryManager::MemoryManager(DWORD dwProcId) :
 	m_hProcHandle(OpenProcess(PROCESS_ALL_ACCESS, FALSE, dwProcId)),
 	m_dwProcId(dwProcId)

@@ -3,20 +3,19 @@
 #include "MemoryManager.h"
 #include "constants.h"
 #include "Coordinates.h"
-#include "View.h"
 #include <memory>
 
-
-class Player
+class Enemy
 {
 private:
+	int m_offset;
 	std::shared_ptr<MemoryManager> m_manager;
 public:
-	Player() = delete;
-	Player(std::shared_ptr<MemoryManager> manager);
-	~Player() = default;
-	
+	Enemy() = delete;
+	Enemy(int enemyNumber, std::shared_ptr<MemoryManager> manager);
+	~Enemy() = default;
+
 	Coordinates GetCoordinates();
-	View GetView();
+	bool IsAlive();
 };
 
