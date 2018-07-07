@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="26">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>52</ID>
+      <Description>"playerZ"</Description>
+      <LastState Value="-91.96875" RealAddress="04E1FFA8"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+1AFFA8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>53</ID>
+      <Description>"playerX"</Description>
+      <LastState Value="2240" RealAddress="04E1FFA4"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+1AFFA8-4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>51</ID>
+      <Description>"playerY"</Description>
+      <LastState Value="-96" RealAddress="04E1FFA0"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+1AFFA8-8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>54</ID>
+      <Description>"X resolution"</Description>
+      <LastState Value="1280" RealAddress="053B86AC"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>hw.dll+0x7486AC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>55</ID>
+      <Description>"Y resolution"</Description>
+      <LastState Value="960" RealAddress="053B86B0"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>hw.dll+0x7486AC+4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>56</ID>
+      <Description>"AngleX"</Description>
+      <LastState Value="304.9969482" RealAddress="05CC69A8"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+0x10569A8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>57</ID>
+      <Description>"AngleY"</Description>
+      <LastState Value="0" RealAddress="05CC69A4"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+10569A4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>58</ID>
+      <Description>"Enemy 0 Z"</Description>
+      <LastState Value="164.03125" RealAddress="05E40288"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+0x11D01FC +0*0x250 +0x8C </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>59</ID>
+      <Description>"Enemy 0 X"</Description>
+      <LastState Value="-800" RealAddress="05E40284"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>60</ID>
+      <Description>"Enemy 0 Y"</Description>
+      <LastState Value="-640" RealAddress="05E40280"/>
+      <VariableType>Float</VariableType>
+      <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>62</ID>
+      <Description>"Enemy 0 Alive"</Description>
+      <LastState Value="1" RealAddress="05E40274"/>
+      <VariableType>Byte</VariableType>
+      <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 14</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>63</ID>
+      <Description>"Enemy 0 Type"</Description>
+      <LastState RealAddress="05E40228"/>
+      <VariableType>String</VariableType>
+      <Length>200</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 60 </Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>61</ID>
+      <Description>"Player Team"</Description>
+      <LastState Value="2" RealAddress="0FAEC94C"/>
+      <VariableType>4 Bytes</VariableType>
+      <Address>client.dll + 0xFC94C</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
