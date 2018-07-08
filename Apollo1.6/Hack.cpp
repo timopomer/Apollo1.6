@@ -1,7 +1,15 @@
 #include "Hack.h"
 
 
-Hack::Hack(const std::shared_ptr<MemoryManager>& manager) : 
+void Hack::startAimbot()
+{
+	while (true)
+	{
+
+	}
+}
+
+Hack::Hack(const std::shared_ptr<MemoryManager>& manager) :
 	m_player(std::make_unique<Player>(manager)),
 	m_enemies(std::make_unique<std::vector<std::shared_ptr<Enemy>>>())
 {
@@ -11,7 +19,18 @@ Hack::Hack(const std::shared_ptr<MemoryManager>& manager) :
 	}
 }
 
-std::ostream & operator<<(std::ostream &outputStream, const Hack& hack)
+void Hack::Start()
+{
+	this->m_aimbotThread = std::make_unique<std::thread>(&Hack::startAimbot, this);
+}
+
+void Hack::Stop()
+{
+	this->m_aimbotThread->join();
+}
+
+
+std::ostream& operator<<(std::ostream &outputStream, const Hack& hack)
 {
 	outputStream << "Player:" << std::endl;
 	outputStream << *hack.m_player << std::endl;

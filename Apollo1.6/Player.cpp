@@ -15,11 +15,11 @@ const View Player::GetView() const
 	return view;
 }
 
-Player::Player(std::shared_ptr<MemoryManager> manager) :
+Player::Player(const std::shared_ptr<MemoryManager>& manager) :
 	m_manager(manager)
 {}
 
-std::ostream & operator<<(std::ostream &outputStream, const Player& player)
+std::ostream& operator<<(std::ostream& outputStream, const Player& player)
 {
 	outputStream << "x:     " << std::setw(15) << player.GetCoordinates().x << std::endl;
 	outputStream << "y:     " << std::setw(15) << player.GetCoordinates().y << std::endl;

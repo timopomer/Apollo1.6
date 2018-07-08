@@ -12,7 +12,7 @@ private:
 	const std::shared_ptr<MemoryManager> m_manager;
 public:
 	Enemy() = delete;
-	Enemy(int enemyNumber, std::shared_ptr<MemoryManager> manager);
+	Enemy(const int& enemyNumber, const std::shared_ptr<MemoryManager>& manager);
 	~Enemy() = default;
 
 	const Coordinates GetCoordinates() const;

@@ -21,7 +21,7 @@ int main()
 
 	std::shared_ptr<MemoryManager> manager = std::make_shared<MemoryManager>(dwProcId);
 	std::unique_ptr<Hack> hack = std::make_unique<Hack>(manager);
-
+	hack->Start();
 	for (;;)
 	{
 		std::cout << *hack;

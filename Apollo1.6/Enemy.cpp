@@ -1,7 +1,7 @@
 #include "Enemy.h"
 
 
-Enemy::Enemy(int enemyNumber, std::shared_ptr<MemoryManager> manager) :
+Enemy::Enemy(const int& enemyNumber, const std::shared_ptr<MemoryManager>& manager) :
 	m_offset(enemyNumber * ENEMY_NUMBER_MULTIPLICATION_OFFSET),
 	m_manager(manager)
 {}
@@ -20,7 +20,7 @@ const bool Enemy::IsAlive() const
 	return isAlive;
 }
 
-std::ostream & operator<<(std::ostream &outputStream, const Enemy &enemy)
+std::ostream& operator<<(std::ostream& outputStream, const Enemy& enemy)
 {
 	outputStream << "x: " << std::setw(10) << enemy.GetCoordinates().x;
 	outputStream << " y: " << std::setw(10) << enemy.GetCoordinates().y;
