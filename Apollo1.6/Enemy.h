@@ -17,6 +17,7 @@ public:
 
 	const Coordinates GetCoordinates() const;
 	const bool IsAlive() const;
+	void Reset() const;
 	friend std::ostream& operator <<(std::ostream& outputStream, const Enemy& enemy);
 
 };

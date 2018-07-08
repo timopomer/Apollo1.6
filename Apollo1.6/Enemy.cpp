@@ -20,6 +20,12 @@ const bool Enemy::IsAlive() const
 	return isAlive;
 }
 
+void Enemy::Reset() const
+{
+	this->m_manager->NullMemory<bool>(HWDLL, ENEMY_BASE + this->m_offset + ENEMY_ALIVE_OFFSET);
+}
+
+
 std::ostream& operator<<(std::ostream& outputStream, const Enemy& enemy)
 {
 	outputStream << "x: " << std::setw(10) << enemy.GetCoordinates().x;

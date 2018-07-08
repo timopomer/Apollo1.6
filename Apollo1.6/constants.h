@@ -1,4 +1,7 @@
 #pragma once
+#ifndef M_PI
+#define M_PI (3.14159265358979323846)
+#endif
 #define CSTRIKE_WINDOW_NAME "Counter-Strike"
 #define HWDLL "hw.dll"
 #define CLDLL "client.dll"
@@ -12,3 +15,4 @@
 #define ENEMY_COORDINATE_OFFSET -0x8
 #define ENEMY_ALIVE_OFFSET -0x14
 #define ENEMY_COUNT 16
+#define ENEMY_RESET_INTERVAL 100

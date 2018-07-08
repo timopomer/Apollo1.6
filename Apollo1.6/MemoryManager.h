@@ -24,7 +24,24 @@ public:
 	{
 		DWORD BaseAddress = (DWORD)(this->getAddress(moduleName) + offset);
 		BOOL success = ReadProcessMemory(this->m_hProcHandle, (LPCVOID)BaseAddress, result, sizeof(T), NULL);
+		//todo: throw exception on failure
 		return *result;
+	}
+
+	template <typename T>
+	void WriteMemory(const LPCSTR &moduleName, const int& offset, T *towrite)
+	{
+		DWORD BaseAddress = (DWORD)(this->getAddress(moduleName) + offset);
+		BOOL success = WriteProcessMemory(this->m_hProcHandle, (LPVOID)BaseAddress, towrite, sizeof(T), NULL);
+		//todo: throw exception on failure
+	}
+
+	template <typename T>
+	void NullMemory(const LPCSTR &moduleName, const int& offset)
+	{
+		T nulledMemory = T{ 0 };
+		this->WriteMemory(moduleName, offset, &nulledMemory);
+		//todo: throw exception on failure
 	}
 };
 
