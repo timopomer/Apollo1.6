@@ -1,5 +1,4 @@
 #pragma once
-
 #include <exception>
 #include <memory>
 #include <iostream>
@@ -7,3 +6,4 @@
 #include "MemoryManager.h"
 #include "Player.h"
 #include "Enemy.h"
+#include "Hack.h"

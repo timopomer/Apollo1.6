@@ -1,5 +1,6 @@
 #pragma once
 
+
 struct View
 {
 	float pitch;	//Y axis

@@ -11,14 +11,14 @@
     <CheatEntry>
       <ID>53</ID>
       <Description>"playerX"</Description>
-      <LastState Value="2240" RealAddress="04E1FFA4"/>
+      <LastState Value="2112" RealAddress="04E1FFA4"/>
       <VariableType>Float</VariableType>
       <Address>hw.dll+1AFFA8-4</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>51</ID>
       <Description>"playerY"</Description>
-      <LastState Value="-96" RealAddress="04E1FFA0"/>
+      <LastState Value="448" RealAddress="04E1FFA0"/>
       <VariableType>Float</VariableType>
       <Address>hw.dll+1AFFA8-8</Address>
     </CheatEntry>
@@ -39,7 +39,7 @@
     <CheatEntry>
       <ID>56</ID>
       <Description>"AngleX"</Description>
-      <LastState Value="304.9969482" RealAddress="05CC69A8"/>
+      <LastState Value="71.99890137" RealAddress="05CC69A8"/>
       <VariableType>Float</VariableType>
       <Address>hw.dll+0x10569A8</Address>
     </CheatEntry>
@@ -53,28 +53,28 @@
     <CheatEntry>
       <ID>58</ID>
       <Description>"Enemy 0 Z"</Description>
-      <LastState Value="164.03125" RealAddress="05E40288"/>
+      <LastState Value="164.84375" RealAddress="05E40288"/>
       <VariableType>Float</VariableType>
       <Address>hw.dll+0x11D01FC +0*0x250 +0x8C </Address>
     </CheatEntry>
     <CheatEntry>
       <ID>59</ID>
       <Description>"Enemy 0 X"</Description>
-      <LastState Value="-800" RealAddress="05E40284"/>
+      <LastState Value="-899.75" RealAddress="05E40284"/>
       <VariableType>Float</VariableType>
       <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 4</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>60</ID>
       <Description>"Enemy 0 Y"</Description>
-      <LastState Value="-640" RealAddress="05E40280"/>
+      <LastState Value="-747.78125" RealAddress="05E40280"/>
       <VariableType>Float</VariableType>
       <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 8</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>62</ID>
       <Description>"Enemy 0 Alive"</Description>
-      <LastState Value="1" RealAddress="05E40274"/>
+      <LastState Value="0" RealAddress="05E40274"/>
       <VariableType>Byte</VariableType>
       <Address>hw.dll+0x11D01FC +0*0x250 +0x8C - 14</Address>
     </CheatEntry>

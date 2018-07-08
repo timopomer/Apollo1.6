@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Hack.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -124,6 +125,7 @@
     <ClInclude Include="constants.h" />
     <ClInclude Include="Coordinates.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Hack.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="Player.h" />
